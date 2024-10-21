@@ -1,0 +1,38 @@
+.about {
+  padding: 60px 30px; /* Increased padding for a spacious feel */
+  text-align: center;
+  background-color: #444141; /* Softer background color */
+  /* background-image: url('../../assets/Attendance.jpg');  */
+  background-size: cover; /* Cover the entire section */
+  background-position: center;
+  color: #333; /* Dark text color */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-title {
+  font-size: 3rem; /* Larger title font */
+  margin-bottom: 30px; /* More space below the title */
+  color: #ff6347; /* Coral color for title */
+  font-family: 'Montserrat', sans-serif; /* Stylish font */
+  letter-spacing: 1.5px; /* Slight letter spacing */
+  text-transform: uppercase; /* Uppercase title for impact */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8; /* More line spacing for readability */
+  margin: 20px 0; /* More vertical spacing */
+  max-width: 900px; /* Increase width for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+  color: white; /* Softer text color */
+  font-family: 'Open Sans', sans-serif; /* Clean font */
+}
+
+.about-description:hover {
+  color: #333; /* Darker text on hover */
+  transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+  

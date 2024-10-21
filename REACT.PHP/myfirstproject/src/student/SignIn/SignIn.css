@@ -1,0 +1,86 @@
+/* Container for the sign-in form */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #d9e9f5 0%, black 100%); /* Gradient background */
+}
+
+/* Styling the form */
+.signin-form {
+  background-color: whitesmoke;
+  padding: 2rem;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add a subtle scale effect on form load */
+.signin-form:hover {
+  transform: scale(1.02); /* Slight scale effect */
+}
+
+/* Form heading */
+.signin-form h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Roboto', sans-serif; /* Use a modern font */
+}
+
+/* Input fields */
+.signin-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.signin-form input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Submit button */
+.signin-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold; /* Make the button text bold */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.signin-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Button lift effect */
+}
+
+/* Link to switch between Sign In and Log In */
+.signin-form p {
+  margin-top: 1rem;
+  color: #333;
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.signin-form a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.signin-form a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker color on hover */
+}
+
+  

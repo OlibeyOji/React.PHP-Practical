@@ -1,0 +1,124 @@
+/* Refined Navbar */
+.mad-navbar {
+  position: fixed; /* Makes the navbar stay at the top */
+  top: 0; /* Aligns it to the top */
+  left: 0;
+  width: 100%; /* Ensures it spans the full width */
+  background: linear-gradient(135deg, #555, #333); /* Smooth gradient for depth */
+  padding: 7px 10px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for elevation */
+  transition: all 0.4s ease-in-out;
+  z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+
+.mad-navbar:hover {
+  background: linear-gradient(135deg, #666, #444); /* Lighter on hover */
+}
+
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 2rem;
+  color: white; /* Soft, eye-catching yellow */
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+  transform: scale(1.1); /* Larger scaling on hover */
+}
+
+.navbar-brand::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  font-size: 1.8rem;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.navbar-brand:hover::before {
+  opacity: 1;
+  transform: rotate(720deg); /* Double spin for extra flair */
+}
+
+/* Navbar items */
+.mad-navbar-nav {
+  display: flex;
+  justify-content: space-between; /* Even spacing between items */
+  align-items: center;
+}
+
+.mad-link {
+  color: #f0f0f0; /* Softer white */
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 0 1.5rem;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.mad-link:hover {
+  color: black; /* Matching with the brand color */
+  text-shadow: 2px 2px 6px black;
+  transform: skew(-5deg) scale(1.1); /* Scale and skew for a dynamic effect */
+}
+
+.mad-link::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: width 0.4s ease;
+}
+
+.mad-link:hover::after {
+  width: 100%;
+}
+
+/* Toggler button */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fddb3a" viewBox="0 0 30 30"><path stroke="rgba(253, 219, 58, 1)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* Media query for responsiveness */
+@media (max-width: 992px) {
+  .mad-navbar {
+      padding: 1rem;
+      border-radius: 0;
+  }
+
+  .navbar-collapse {
+      background-color: #333;
+      padding: 1.5rem;
+      border-radius: 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .mad-navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .mad-link {
+      margin: 0.8rem 0; /* Increase margin for better readability */
+  }
+} 
+
+
+  

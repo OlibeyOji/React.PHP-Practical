@@ -1,0 +1,98 @@
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, black); /* Softer, brighter gradient */
+}
+
+/* Styling the form */
+.login-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Form heading */
+.login-form h2 {
+  margin-bottom: 1rem;
+  color: #00796b; /* Changed color for heading */
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem; /* Increased font size for better visibility */
+}
+
+/* Error message styling */
+.error-message {
+  color: #d9534f;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Input fields */
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Input field focus effect */
+.login-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Submit button */
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold; /* Make button text bold */
+}
+
+/* Button hover effect */
+.login-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Button active effect */
+.login-form button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+  }
+  .login-form {
+    padding: 1.5rem;
+  }
+}
+

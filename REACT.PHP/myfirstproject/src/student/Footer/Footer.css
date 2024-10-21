@@ -1,0 +1,83 @@
+.footer {
+  background: linear-gradient(135deg, white 0%, black 100%); /* Gradient background */
+  color: white; /* Change text color for contrast */
+  padding: 40px 20px; /* Padding for spacing */
+  text-align: center; /* Center align the text */
+  position: relative; /* Position for absolute elements inside */
+}
+
+.footer-container {
+  display: flex; /* Flex layout */
+  justify-content: space-around; /* Space out the sections */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  max-width: 1200px; /* Max width for container */
+  margin: 0 auto; /* Center align container */
+}
+
+.footer-title {
+  font-size: 2rem; /* Increased title font size */
+  margin-bottom: 20px; /* Space below title */
+  font-weight: bold; /* Bold title */
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+  margin: 20px; /* Margin around sections */
+  flex: 1 1 250px; /* Flex-grow and basis for responsive design */
+}
+
+.footer-links ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footer-links ul li {
+  margin: 10px 0; /* Vertical spacing between links */
+}
+
+.footer-links a {
+  color: white; /* Change link color to white */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+  color: black; /* Change color on hover for emphasis */
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-social .social-icons {
+  display: flex; /* Flex layout for icons */
+  justify-content: center; /* Center align icons */
+}
+
+.footer-social a {
+  color: #ffffff; /* White icons */
+  margin: 0 15px; /* Spacing between icons */
+  font-size: 2rem; /* Increased icon size */
+  transition: transform 0.3s; /* Animation on hover */
+}
+
+.footer-social a:hover {
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.footer-bottom {
+  margin-top: 20px; /* Space above bottom text */
+  font-size: 0.9rem; /* Smaller text size */
+  opacity: 0.8; /* Slightly faded for subtlety */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+  
+  .footer-links, .footer-contact, .footer-social {
+    margin: 10px 0; /* Adjust margin for small screens */
+  }
+}
+
+  
